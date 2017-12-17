@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Clock from './Clock';
 import './App.css';
 
 class App extends Component {
@@ -22,12 +23,9 @@ class App extends Component {
                     Countdown to {this.state.deadline}
                 </div>
 
-                <div>
-                    <div className="Countdown-days">10 days</div>
-                    <div className="Countdown-hours">30 hours</div>
-                    <div className="Countdown-minutes">15 minutes</div>
-                    <div className="Countdown-seconds">20 seconds</div>
-                </div>
+                <Clock 
+                 deadline = {this.state.deadline}
+                />
 
                 <div>
                     <input 
